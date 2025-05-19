@@ -45,3 +45,34 @@ variable "aws_secret_key" {
   type        = string
   sensitive   = true
 }
+
+
+variable "db_name" {
+  description = "Database name"
+  type        = string
+}
+
+variable "db_username" {
+  description = "Database username"
+  type        = string
+}
+
+variable "db_password" {
+  description = "Database password"
+  type        = string
+}
+
+variable "db_instance_class" {
+  description = "RDS instance class"
+  type        = string
+}
+
+variable "allocated_storage" {
+  description = "Allocated storage for RDS in GB"
+  type        = number
+}
+
+variable "multi_az" {
+  description = "Enable Multi-AZ for RDS"
+  type        = bool
+}
