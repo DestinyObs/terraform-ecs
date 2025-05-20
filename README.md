@@ -89,14 +89,6 @@ This repository contains Terraform configurations for provisioning a modular and
    terraform destroy
    ```
 
-## Secrets Management (Coming Soon)
-
-The `secrets_manager` module will be integrated to securely store and retrieve secrets (e.g., database credentials, API tokens) using AWS Secrets Manager.
-
-## ECS Deployment (Coming Soon)
-
-The `ecs` module will be used to containerize and deploy applications using AWS ECS with Fargate, load balancers, and service discovery.
-
 ## Notes
 
 * Keep your Terraform backend secure and configure it for remote state storage in `backend.tf`.

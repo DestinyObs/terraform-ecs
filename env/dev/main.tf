@@ -62,3 +62,14 @@ module "rds" {
   aws_access_key = var.aws_access_key
   aws_secret_key = var.aws_secret_key
 }
+
+
+module "secrets_manager" {
+  source       = "../../modules/secrets_manager"
+  secret_name  = "dev-rds-db-credentials"
+  environment  = "dev"
+  db_name      = var.db_name
+  db_username  = var.db_username
+  db_password  = var.db_password
+}
+
