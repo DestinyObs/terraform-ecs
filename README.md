@@ -44,10 +44,6 @@ This repository contains Terraform configurations for provisioning a modular and
 
   * Fargate cluster
   * Task definitions and service
-* **Secrets/Secrets Manager Module**
-
-  * Secure storage of environment secrets
-  * IAM integration for access
 
 ## Prerequisites
 
