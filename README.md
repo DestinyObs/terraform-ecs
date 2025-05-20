@@ -20,8 +20,7 @@ This repository contains Terraform configurations for provisioning a modular and
 └── modules
     ├── ecs/                 # ECS (To be implemented)
     ├── rds/                 # RDS PostgreSQL DB setup
-    ├── secrets/             # Secrets (To be implemented)
-    ├── secrets_manager/     # AWS Secrets Manager (To be implemented)
+    ├── secrets_manager/     # AWS Secrets Manager Setup
     └── vpc/                 # VPC with public and private subnets
 ````
 
@@ -101,6 +100,6 @@ This repository contains Terraform configurations for provisioning a modular and
 
 ---
 
-**iDeploy | iSecure | iSustain | iDoNotCopy**
+**iDeploy | iSecure | iSustain**
 
 =
