@@ -29,7 +29,7 @@ variable "db_password" {
 variable "multi_az" {
   description = "Enable Multi-AZ deployment"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "subnet_ids" {
