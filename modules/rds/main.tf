@@ -18,10 +18,11 @@ resource "aws_db_instance" "rds" {
   password            = var.db_password
   port                = var.db_port
   db_subnet_group_name = aws_db_subnet_group.rds_subnet_group.name
-  vpc_security_group_ids = [aws_security_group.rds_sg.id]
+  vpc_security_group_ids = var.vpc_security_group_ids
   multi_az            = var.multi_az
   publicly_accessible = false
   skip_final_snapshot = true
+  storage_encrypted = true
 
   tags = {
     Name        = "${var.environment}-rds-instance"

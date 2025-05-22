@@ -77,4 +77,13 @@ variable "multi_az" {
   type        = bool
 }
 
+variable "db_port" {
+  description = "Database port"
+  type        = number
+}
+
+# variable "vpc_security_group_ids" {
+#   description = "List of security group IDs to associate with the RDS instance"
+#   type        = list(string)
+# }
 

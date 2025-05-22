@@ -69,3 +69,9 @@ variable "aws_secret_key" {
   type        = string
   sensitive   = true
 }
+
+
+variable "vpc_security_group_ids" {
+  description = "List of security group IDs to associate with the RDS instance"
+  type        = list(string)
+}
