@@ -24,3 +24,10 @@ variable "db_name" {
   description = "Database name"
   type        = string
 }
+
+
+variable "db_host" { description = "Database host" }
+variable "db_port" { description = "Database port" }
+variable "api_url" { description = "API URL" }
+variable "api_golang_port" { description = "API Golang port" }
+variable "delay_ms" { description = "Delay in ms" }

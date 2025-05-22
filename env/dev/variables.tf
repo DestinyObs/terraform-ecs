@@ -82,8 +82,7 @@ variable "db_port" {
   type        = number
 }
 
-# variable "vpc_security_group_ids" {
-#   description = "List of security group IDs to associate with the RDS instance"
-#   type        = list(string)
-# }
+variable "api_url" { description = "API URL" }
+variable "api_golang_port" { description = "API Golang port" }
+variable "delay_ms" { description = "Delay in ms" }
 

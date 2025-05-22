@@ -29,6 +29,11 @@ module "secrets_manager" {
   db_name      = var.db_name
   db_username  = var.db_username
   db_password  = var.db_password
+  db_host         = module.rds.rds_endpoint
+  db_port         = module.rds.rds_port
+  api_url         = var.api_url
+  api_golang_port = var.api_golang_port
+  delay_ms        = var.delay_ms
 }
 
 module "rds" {
